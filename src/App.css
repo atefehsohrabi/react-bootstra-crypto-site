@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Yekan';
+  src: url('./assets/Fonts/Yekan.ttf') format('truetype'), 
+  url('./assets/Fonts/Yekan.eot') format('eot'), 
+  url('./assets/Fonts/Yekan.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+ background-color: #f2f2f2;
+ direction: rtl !important;
+ font-family: 'Yekan';
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
+ min-height: calc(100vh - 67px - 40px);
+ position: relative !important;
+}
+.position-absolute{
+ position: absolute !important;
+}
+.logo-box{
+ width: 300px;
+}
+.navbar-logo{
+  color: rgb(194, 7, 178);
+  font-size: 2.6rem;
+  margin-right: 0.5rem;
+  font-family: 'Yekan';
+}
+.footer{
+  background-color: #333;
+  color:#f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.bg-img{
+  background-image: url('./assets/image/background-imgg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.form-label{
+  font-size: 12px !important;
+  font-family: 'Yekan';
+}
+label{
+  font-size: 11px !important;
+  font-family: 'Yekan';
+}
+.form-text{
+  font-size: 12px !important;
+  font-family: 'Yekan';
+}
+.hight-90{
+  height: 90% !important;
+}
+.mgb-0 {
+  margin-bottom: 0px !important;
+}
+.form-control {
+  line-height: 0.5rem;
+  width: 92% !important;
+}
+::placeholder{
+  font-size: 10px;
+  font-family: 'Yekan';
+}
+.banner-bg{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 36px;
 }
-
-.App-link {
-  color: #61dafb;
+.text-signin{
+  font-size: 10px;
+  color: rgb(245, 207, 136);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-question{
+  font-size: 10px;
+  color: #fff;
+}
+.bg-banner-bottom{
+  width: 26%;
+  background-color: rgb(12 20 59);
+  backdrop-filter: blur(20px);
+}
+.bg-box{
+    width: 210px;
+    height: 210px;
+}
+.bg-body-tertiary{
+  background-color: blue !important;
+}
+.video{
+  width: 150px;
+  height: 100px;
+}
+.mg-row{
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.text-info-h{
+  font-size: 12px;
+  line-height: 50px;
+}
+.text-getinfo{
+  font-size: 12;
+  font-weight: bold;
+    line-height: 10px;
+    font-family: 'Yekan';
+}
+.mg-row-20 {
+  margin-top: 10px !important;
+  margin-bottom: 40px !important;
+}
+.img-size{
+  width: 190px !important;
+  height: 190px !important;
+}
+.img-video{
+  width: 300px !important;
+  margin-bottom: 30px ;
+}
+.mg-span-20{
+  margin-top: 40px !important;
+  margin-bottom: 20px !important;
+}
+.text-login{
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(248, 198, 90);
+  font-family: 'Yekan';
+}
+.text-reject{
+  font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Yekan';
+}
+a{
+  text-decoration: none !important ;
+}
+.iconcolor{
+  color: rgb(248, 198, 90);
+}
+button{width: 90% !important;}
+.btn-color{
+  background-color: rgb(247, 187, 109) !important;
+  color: #fff;
+  font-size: 10px !important;
+  font-family: 'Yekan';
+}
+.btn-gl{
+  background-color: #fff !important;
+  color: #333;
+  font-size: 10px !important;
+  border:1px solid rgb(201, 197, 197) !important;
+  font-family: 'Yekan';
+}
+.hight-90{
+  height: 90% !important;
+}
+.navbar-font{
+  font-family: 'Yekan';
+  font-size: 13px;
+}
+.welcom-font{
+  font-family: 'Yekan';
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(10, 179, 74, 0.596);
 }
