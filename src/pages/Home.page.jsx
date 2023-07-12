@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaUser } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import OnboardCard from '../component/ui/onboard-card';
-import Videoimg from '../assets/image/Video.png';
+import axios from "axios";
+import { baseUrl } from '../constant/api';
+import CoinComponent from '../component/coin/CoinComponent';
 
-
+import { Spinner } from '../component/ui/Spinner.component';
+// import spinnerImg from "../../assets/image/spinner.gif";
 const HomePage = () => {
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+
+    useEffect(()=>{
+        setLoading(true)
+        axios(baseUrl).then(response=>{
+            setLoading(false)
+            // console.log(Response.data)
+            setData(response.data)
+        })
+        .catch((error)=>{
+            setError("An Error occured")
+        });
+
+    },[])
+
     return (
         <div className='container text-center '>
             <div className='row flex-row mg-row'>
@@ -23,8 +43,7 @@ const HomePage = () => {
                 <OnboardCard />
             </div>
             <div className='row d-flex flex-column align-items-center mt-10 mb-10'>
-                <span className='mg-span-20 text-info-h'>مطمئن نیستی میخوای با کدوم شروع کنی؟ ویدئو محصولات رمز ارز و ببین و تصمیم بگیر!</span>
-                <div className=' col w-75 video'> <img src={Videoimg} className='img-video'/></div>
+                {loading ? <Spinner /> : error !== "" ? <h1>{error}</h1> : <CoinComponent data={data} />}
             </div>
             
         </div>
