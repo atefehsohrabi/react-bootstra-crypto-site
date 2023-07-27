@@ -14,7 +14,7 @@ const toggleMenu =() =>{
             <div className="container-fluid">
                 <div className="navbar-brand navbar-font" >
                     {/* <FaCoins className='navbar-logo'/>  */}
-                    پلتفرم رمز ارز</div>
+                    Crypto</div>
                 <button className="navbar-toggler" type="button" 
                 data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" 
@@ -28,13 +28,13 @@ const toggleMenu =() =>{
                             <Link className="nav-link navbar-font" ></Link>
                         </li>
                         <li className="nav-item" onClick={toggleMenu}>
-                            <Link className="nav-link navbar-font" to="/">صفحه نخست</Link>
+                            <Link className="nav-link navbar-font" to="/">Home</Link>
                         </li>
                         <li className="nav-item" onClick={toggleMenu}>
-                            <Link className="nav-link navbar-font" to="/login">ورود</Link>
+                            <Link className="nav-link navbar-font" to="/login">Login</Link>
                         </li>
                         <li className="nav-item" onClick={toggleMenu}>
-                            <Link className="nav-link navbar-font" to="/validsignup">تایید ثبت نام</Link>
+                            <Link className="nav-link navbar-font" to="/validsignup">Validation signup</Link>
                         </li>
                     </ul>
                 </div>
