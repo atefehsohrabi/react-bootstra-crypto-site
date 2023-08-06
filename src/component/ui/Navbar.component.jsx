@@ -34,8 +34,14 @@ const toggleMenu =() =>{
                             <Link className="nav-link navbar-font" to="/login">Login</Link>
                         </li>
                         <li className="nav-item" onClick={toggleMenu}>
-                            <Link className="nav-link navbar-font" to="/validsignup">Validation signup</Link>
+                            <Link className="nav-link navbar-font" to="/about">About</Link>
                         </li>
+                        <li className="nav-item" onClick={toggleMenu}>
+                            <Link className="nav-link navbar-font" to="/contact">Contact</Link>
+                        </li> 
+                        {/* <li className="nav-item" onClick={toggleMenu}>
+                            <Link className="nav-link navbar-font" to="/validsignup">Validation signup</Link>
+                        </li> */}
                     </ul>
                 </div>
             </div>

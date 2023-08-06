@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const CoinComponent = ({data}) => {
     console.log(data)
@@ -25,7 +27,7 @@ const CoinComponent = ({data}) => {
                                 <th scope='row'>{coin.market_cap_rank}</th>
                                 <td>{coin.market_cap_rank}</td>
                                 <td ><img src={coin.image} style={{ width: '40px'}}/></td>
-                                <td>{coin.symbol}</td>
+                                <td><Link to={`coin/${coin.id}`}>{coin.symbol}</Link></td>
                                 <td>{coin.current_price
                                 }</td>
                                 <td>{coin.price_change_percentage_24h}</td>
