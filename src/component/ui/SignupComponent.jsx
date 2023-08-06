@@ -26,10 +26,7 @@ const SignupComponent = () => {
                 <label for="exampleInputPassword1" className="form-label">Repeasd Password</label>
                 <input type="password" className="form-control " id="exampleInputPassword1" />
             </div>
-                <div className="mgb-0">
-                <label for="exampleInputPassword1" className="form-label">Code</label>
-                <input type="password" className="form-control" id="exampleInputPassword1" />
-            </div>
+                
            
                 <div className="mgb-0 form-check">
                     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
